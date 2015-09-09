@@ -1113,8 +1113,18 @@
          "content_margin": [3, 3, 6, 3]
       },
 
-         // Textline input oveflow menu
+         // Textline input inside overlay panels
+      {
+         "class": "text_line_control",
+         "content_margin": [12, 7],
+         "parents": [{"class": "overlay_control"}],
+         "layer0.texture": "Kronuz Theme/assets/text-field--panel.png",
+         "layer0.inner_margin": [8, 8],
+         "layer0.draw_center": true
 
+      },
+
+         // Textline input oveflow menu
       {
          "class": "dropdown_button_control",
          "content_margin": [12, 12],
