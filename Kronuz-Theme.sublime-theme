@@ -147,7 +147,7 @@
             "layer1.texture": "Kronuz-Theme/assets/quick-panel-background.png",
             "layer1.inner_margin": [12, 40, 12, 19],
             "layer1.opacity": 1.0,
-            "content_margin": [6, 8, 6, 6]
+            "content_margin": [6, 6, 6, 13]
       },
 
       //
@@ -1082,9 +1082,9 @@
       {
          "class": "panel_control",
          "layer0.texture": "Kronuz-Theme/assets/panel-background.png",
-         "layer0.inner_margin": [2, 2, 2, 2],
+         "layer0.inner_margin": [0, 0],
          "layer0.opacity": 1.0,
-         "content_margin": [2, 3, 2, 1]
+         "content_margin": [2, 2]
       },
 
          // Status bar panel close icon
@@ -1109,19 +1109,17 @@
          "class": "text_line_control",
          "layer0.texture": "Kronuz-Theme/assets/text-field.png",
          "layer0.opacity": 1.0,
-         "layer0.inner_margin": [4, 5, 4, 3],
-         "content_margin": [3, 3, 6, 3]
+         "layer0.inner_margin": [4, 4],
+         "content_margin": [4, 4]
       },
 
          // Textline input inside overlay panels
       {
          "class": "text_line_control",
-         "content_margin": [12, 7],
          "parents": [{"class": "overlay_control"}],
+         "content_margin": [8, 8],
          "layer0.texture": "Kronuz-Theme/assets/text-field--panel.png",
-         "layer0.inner_margin": [8, 8],
-         "layer0.draw_center": true
-
+         "layer0.inner_margin": [8, 8]
       },
 
          // Textline input oveflow menu
@@ -1413,7 +1411,7 @@
          "layer1.opacity": 0.0
       },
 
-      // Status bar panel
+         // Status bar panel
       {
          "class": "panel_control",
          "settings": ["kronuz_theme_panel_separator"],
