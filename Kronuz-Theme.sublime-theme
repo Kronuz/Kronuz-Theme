@@ -1094,7 +1094,7 @@
          "layer0.opacity": 0.6,
          "layer1.texture": "Kronuz-Theme/assets/close_icon--hover.png",
          "layer1.opacity": 0.0,
-         "content_margin": [0, 0] // 8,8 to show
+         "content_margin": [8, 8] // 8,8 to show
       },
 
       {
