@@ -4,14 +4,14 @@ Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color sc
 
 ## Design & Colors
 
-![Theme - Kronuz](Screenshots/Kronuz-Theme.png)
-
 [View a larger screenshot](https://raw.githubusercontent.com/Kronuz/Kronuz-Theme/master/Screenshots/Kronuz-Theme.png)
 
+![Theme - Kronuz](Screenshots/Kronuz-Theme.png)
+
+
+### Highlighted console
 
 ![Console](Screenshots/Kronuz-Theme-Console.png)
-
-[View a larger screenshot](https://raw.githubusercontent.com/Kronuz/Kronuz-Theme/master/Screenshots/Kronuz-Theme-Console.png)
 
 
 *The font used in the screenshots is Menlo 12 with no antialias.
