@@ -971,7 +971,7 @@
          "color": [200, 200, 200],
          "shadow_color": [24, 24, 24, 0],
          "shadow_offset": [0, 0],
-         "font.bold": true
+         "font.bold": false
       },
 
          // Status bar labels
@@ -1032,8 +1032,7 @@
          "class": "panel_control",
          "layer0.texture": "Theme - Kronuz/assets/panel-background.png",
          "layer0.inner_margin": [0, 2, 0, 0],
-         "layer0.opacity": 1.0,
-         "content_margin": [2, 2]
+         "layer0.opacity": 1.0
       },
 
          // Status bar panel close icon
@@ -1059,7 +1058,7 @@
          "layer0.texture": "Theme - Kronuz/assets/text-field.png",
          "layer0.opacity": 1.0,
          "layer0.inner_margin": [3, 4, 3, 2],
-         "content_margin": [4, 8, 4, 4]
+         "content_margin": [3, 3]
       },
 
          // Textline input inside overlay panels
@@ -1074,7 +1073,7 @@
          // Textline input oveflow menu
       {
          "class": "dropdown_button_control",
-         "content_margin": [12, 12],
+         "content_margin": [9, 9],
          "layer0.texture": "Theme - Kronuz/assets/overflow_menu.png",
          "layer0.opacity": 1.0,
          "layer0.inner_margin": [0, 0],
