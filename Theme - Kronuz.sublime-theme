@@ -147,7 +147,7 @@
             "layer1.texture": "Theme - Kronuz/assets/quick-panel-background.png",
             "layer1.inner_margin": [12, 40, 12, 19],
             "layer1.opacity": 1.0,
-            "content_margin": [6, 6, 6, 13]
+            "content_margin": [8, 6, 8, 13]
       },
 
       //
@@ -464,7 +464,7 @@
          "class": "sidebar_heading",
          "color": [207, 216, 220],
          "font.bold": false,
-         "font.size": 12,
+         "font.size": 14,
          "shadow_color": [250, 250, 250, 0],
          "shadow_offset": [0, 0]
       },
@@ -572,7 +572,7 @@
 
       {
          "class": "icon_folder",
-         "content_margin": [13, 8],
+         "content_margin": [9, 8],
          "layer0.tint": [38, 50, 56],
          "layer0.opacity": 0,
          "layer1.texture": "Theme - Kronuz/assets/folder.png",
@@ -1027,12 +1027,11 @@
     * Widget, input, buttons settings and behavioring
    ========================================================================= */
 
-
          // Status bar panel (Bottom panel background)
       {
          "class": "panel_control",
          "layer0.texture": "Theme - Kronuz/assets/panel-background.png",
-         "layer0.inner_margin": [0, 0],
+         "layer0.inner_margin": [0, 2, 0, 0],
          "layer0.opacity": 1.0,
          "content_margin": [2, 2]
       },
@@ -1044,7 +1043,7 @@
          "layer0.opacity": 0.6,
          "layer1.texture": "Theme - Kronuz/assets/close_icon--hover.png",
          "layer1.opacity": 0.0,
-         "content_margin": [8, 8] // 8,8 to show
+         "content_margin": [8, 8] // 8, 8 to show
       },
 
       {
@@ -1059,17 +1058,17 @@
          "class": "text_line_control",
          "layer0.texture": "Theme - Kronuz/assets/text-field.png",
          "layer0.opacity": 1.0,
-         "layer0.inner_margin": [4, 4],
-         "content_margin": [4, 4]
+         "layer0.inner_margin": [3, 4, 3, 2],
+         "content_margin": [4, 8, 4, 4]
       },
 
          // Textline input inside overlay panels
       {
          "class": "text_line_control",
          "parents": [{"class": "overlay_control"}],
-         "content_margin": [8, 8],
          "layer0.texture": "Theme - Kronuz/assets/text-field--panel.png",
-         "layer0.inner_margin": [8, 8]
+         "layer0.inner_margin": [8, 4, 8, 2],
+         "content_margin": [9, 4]
       },
 
          // Textline input oveflow menu
@@ -1102,45 +1101,54 @@
          "class": "button_control",
          "content_margin": [6, 5, 6, 6],
          "min_size": [75, 0],
-         "layer0.tint": [33, 33, 33],
+
+         "layer0.texture": "Theme - Kronuz/assets/btn-large-on.png",
          "layer0.opacity": 0.0,
          "layer0.inner_margin": [6, 6],
-         "layer1.texture": "Theme - Kronuz/assets/btn-large-on.png",
-         "layer1.opacity": 0.0,
-         "layer1.inner_margin": [6, 6],
-         "layer2.texture": "Theme - Kronuz/assets/btn-large.png",
-         "layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
-         "layer2.inner_margin": [6, 6]
+
+         "layer1.texture": "Theme - Kronuz/assets/btn-large.png",
+         "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+         "layer1.inner_margin": [6, 6]
       },
       // Pressed button state
       {
          "class": "button_control",
          "attributes": ["pressed"],
-         "layer2.opacity": 0.0
+         "layer1.opacity": 0.0
       },
       {
          "class": "button_control",
          "attributes": ["hover"],
-         "layer2.opacity": 1.0
+         "layer1.opacity": 1.0
       },
       {
          "class": "button_control",
          "attributes": ["pressed", "hover"],
-         "layer0.opacity": 0,
-         "layer1.opacity": 1.0,
-         "layer2.opacity": 0
+         "layer0.opacity": 1.0,
+         "layer1.opacity": 0
       },
 
-      // Small Icon Buttons
-      {
-         "class": "icon_button_control",
-         "layer0.tint": [33, 33, 33],
-         "layer0.inner_margin": [6, 6],
-         "layer0.opacity": 0.0,
-         "layer2.tint": [255, 255, 255],
-         "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
-         "content_margin": [3, 3]
-      },
+    // Button single
+    {
+        "class": "icon_button_control",
+        "content_margin": [4, 3],
+
+        "layer0.texture": "Theme - Kronuz/assets/btn-small-on.png",
+        "layer0.opacity": 0.0,
+
+        "layer1.texture": "Theme - Kronuz/assets/btn-small.png",
+        "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0,
+    },
 
 
       /* Buttons icons settings
@@ -1149,46 +1157,47 @@
          // Regex Icon
       {
          "class": "icon_regex",
-         "layer0.texture": "Theme - Kronuz/assets/find_regex--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_regex.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "parents": [{"class": "icon_button_control"}],
+         "layer2.texture": "Theme - Kronuz/assets/find_regex--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_regex.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_regex",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Preserve case sensitive
 
       {
          "class": "icon_case",
-         "layer0.texture": "Theme - Kronuz/assets/find_case--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_case.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_case--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_case.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_case",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Wholeword
 
       {
          "class": "icon_whole_word",
-         "layer0.texture": "Theme - Kronuz/assets/find_word--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_word.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_word--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_word.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
@@ -1196,91 +1205,91 @@
        {
            "class": "icon_whole_word",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Wrap
 
       {
          "class": "icon_wrap",
-         "layer0.texture": "Theme - Kronuz/assets/find_wrap--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_wrap.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_wrap--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_wrap.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_wrap",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // In selection
 
       {
          "class": "icon_in_selection",
-         "layer0.texture": "Theme - Kronuz/assets/find_inselection--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_inselection.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "content_margin": [12,12]
+         "layer2.texture": "Theme - Kronuz/assets/find_inselection--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_inselection.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "content_margin": [9, 9]
       },
 
 
        {
            "class": "icon_in_selection",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Highlight Result
 
       {
          "class": "icon_highlight",
-         "layer0.texture": "Theme - Kronuz/assets/find_highlight--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_highlight.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_highlight--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_highlight.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_highlight",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Preserve Case
 
       {
          "class": "icon_preserve_case",
-         "layer0.texture": "Theme - Kronuz/assets/replace_preserve_case--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/replace_preserve_case.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/replace_preserve_case--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/replace_preserve_case.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_preserve_case",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Show context
 
       {
          "class": "icon_context",
-         "layer0.texture": "Theme - Kronuz/assets/find_context--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_context.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_context--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_context.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
@@ -1288,44 +1297,44 @@
        {
            "class": "icon_context",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Use buffer
 
       {
          "class": "icon_use_buffer",
-         "layer0.texture": "Theme - Kronuz/assets/use_buffer--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/use_buffer.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/use_buffer--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/use_buffer.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_use_buffer",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
          // Reverse direction
 
       {
          "class": "icon_reverse",
-         "layer0.texture": "Theme - Kronuz/assets/find_reverse--hover.png",
-         "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-         "layer1.texture": "Theme - Kronuz/assets/find_reverse.png",
-         "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer2.texture": "Theme - Kronuz/assets/find_reverse--hover.png",
+         "layer2.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
+         "layer3.texture": "Theme - Kronuz/assets/find_reverse.png",
+         "layer3.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
          "content_margin": [9, 9]
       },
 
        {
            "class": "icon_reverse",
            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-           "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-           "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+           "layer2.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+           "layer3.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
        },
 
 
