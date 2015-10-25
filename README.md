@@ -23,7 +23,7 @@ Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color sc
 
 The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net/).
 
-* Open `Command Palette` using menu item `Tools -> Command Palette...`, or `Cmd+Shift+P` (OS X) `Ctrl+Shift+P` (Win/Linux)
+* Open `Command Palette` using menu item `Tools -> Command Palette...`, or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (OS X) <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Win/Linux)
 * Type `Package Control: Install Package`
 * Search `Theme - Kronuz`
 
