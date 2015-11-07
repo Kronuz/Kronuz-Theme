@@ -675,9 +675,9 @@
 
       {
          "class": "icon_folder_dup",
+         "content_margin": [9, 8],
          "layer0.texture": "Theme - Kronuz/assets/folder_dup.png",
-         "layer0.opacity": 1.0,
-         "content_margin": [13, 8]
+         "layer0.opacity": 1.0
       },
 
       {
