@@ -1,6 +1,6 @@
 {
-	"syntax": "Packages/Theme - Kronuz/Widget.tmLanguage",
-	"color_scheme": "Packages/Theme - Kronuz/Widget.stTheme",
+	"syntax": "Packages/Theme - Kronuz/Console.sublime-syntax",
+	"color_scheme": "Packages/Theme - Kronuz/Kronuz.tmTheme",
 	"draw_shadows": false,
 	// "font_options": ["no_antialias"],
 	"line_padding_top": 2
