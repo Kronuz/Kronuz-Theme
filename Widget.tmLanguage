@@ -1625,7 +1625,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>source.regexp.console</string>
+					<string>source.regexp.python</string>
 				</dict>
 			</array>
 		</dict>
