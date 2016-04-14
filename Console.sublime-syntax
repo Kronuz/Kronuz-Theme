@@ -6,90 +6,32 @@ variables:
   sql_indicator: \s*(?:SELECT|INSERT|UPDATE|DELETE|CREATE|REPLACE|ALTER)\b
 contexts:
   main:
-    - match: |-
-        (?x)(
-          ^reloading\b|
-          ^plugins\sloaded\b|
-          ^using\sgpu|
-          ^generating\ssyntax\ssummary|
-          ^Couldn|
-          ^executable:|
-          ^working\sdir:|
-          ^packages\spath:|
-          ^state\spath:|
-          ^zip\spath:|
-          ^error:|
-          (?<=^ArithmeticError):|
-          (?<=^AssertionError):|
-          (?<=^AttributeError):|
-          (?<=^BlockingIOError):|
-          (?<=^BrokenPipeError):|
-          (?<=^BufferError):|
-          (?<=^ChildProcessError):|
-          (?<=^ConnectionError):|
-          (?<=^ConnectionAbortedError):|
-          (?<=^ConnectionRefusedError):|
-          (?<=^ConnectionResetError):|
-          (?<=^EOFError):|
-          (?<=^EnvironmentError):|
-          (?<=^FileExistsError):|
-          (?<=^FileNotFoundError):|
-          (?<=^FloatingPointError):|
-          (?<=^InterruptedError):|
-          (?<=^IOError):|
-          (?<=^IsADirectoryErrorError):|
-          (?<=^ImportError):|
-          (?<=^IndentationError):|
-          (?<=^IndexError):|
-          (?<=^KeyError):|
-          (?<=^LookupError):|
-          (?<=^MemoryError):|
-          (?<=^NameError):|
-          (?<=^NotADirectoryError):|
-          (?<=^NotImplementedError):|
-          (?<=^OSError):|
-          (?<=^OverflowError):|
-          (?<=^PermissionError):|
-          (?<=^ProcessLookupError):|
-          (?<=^ReferenceError):|
-          (?<=^RuntimeError):|
-          (?<=^StandardError):|
-          (?<=^SyntaxError):|
-          (?<=^SystemError):|
-          (?<=^TabError):|
-          (?<=^TimeoutError):|
-          (?<=^TypeError):|
-          (?<=^UnboundLocalError):|
-          (?<=^UnicodeError):|
-          (?<=^UnicodeEncodeError):|
-          (?<=^UnicodeDecodeError):|
-          (?<=^UnicodeTranslateError):|
-          (?<=^ValueError):|
-          (?<=^VMSError):|
-          (?<=^WindowsError):|
-          (?<=^ZeroDivisionError):|
-          (?<=^Warning):|
-          (?<=^DeprecationWarning):|
-          (?<=^PendingDeprecationWarning):|
-          (?<=^RuntimeWarning):|
-          (?<=^SyntaxWarning):|
-          (?<=^UserWarning):|
-          (?<=^FutureWarning):|
-          (?<=^ImportWarning):|
-          (?<=^UnicodeWarning):|
-          (?<=^BytesWarning):|
-          (?<=^BaseException):|
-          (?<=^Exception):|
-          (?<=^SystemExit):|
-          (?<=^StopIteration):|
-          (?<=^NotImplemented):|
-          (?<=^KeyboardInterrupt):|
-          (?<=^GeneratorExit):
-        )
+    # -- Kornuz modifications BEGIN --
+    - match: '^(startup(?=, version:))'
+      scope: support.function.builtin.console
+    - match: '^(using gpu)'
       push:
         - meta_scope: source.line.console
         - match: \n
           pop: true
+    - match: '^(zip path:|working dir:)'
+      push:
+        - meta_content_scope: constant.other.console
+        - meta_scope: source.line.console
+        - match: \n
+          pop: true
+    - match: '^(reloading plugin )'
+      push:
+        - meta_content_scope: keyword.other.console
+        - meta_scope: source.line.console
+        - match: \n
+          pop: true
+
+    - match: '([-_.a-zA-Z][-_.\w]*)?/([-_.\w][-_.\w ]*/)+([-_.\w][-_.\w ]*)?'
+      scope: constant.other.console
+    - match: '\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
+      scope: constant.other.console
+    # -- Kornuz modifications END --
     - match: "#"
       captures:
         0: punctuation.definition.comment.console
@@ -916,8 +858,8 @@ contexts:
             - include: escaped_char
             - include: constant_placeholder
           push: 'scope:source.sql'
-    # Single-line string, unicode or not
-    - match: '([uU]?)('')'
+    # Single-line string, unicode or not; tweaked by Kronuz to avoid "can't" and such
+    - match: '(?<!\w)([uU]?)('')(?=.*'')'
       captures:
         1: storage.type.string.console
         2: punctuation.definition.string.begin.console
