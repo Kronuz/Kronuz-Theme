@@ -1068,7 +1068,7 @@
             "name": "Markdown: Raw Block fenced",
             "scope": "markup.raw.block.fenced.markdown",
             "settings": {
-                "background": "#222",
+                "background": "#20202060",
                 "foreground": "#e6e1dc"
             }
         },
@@ -1076,7 +1076,7 @@
             "name": "Markdown: Fenced Bode Block",
             "scope": "punctuation.definition.fenced.markdown, variable.language.fenced.markdown",
             "settings": {
-                "background": "#222222",
+                "background": "#20202060",
                 "foreground": "#636050"
             }
         },
@@ -1112,20 +1112,6 @@
         // |____/|_| |_|\___|_|_|
         ////////////////////////////////////////////////////////////////
         {
-            "name": "Shell: Meta Block",
-            "scope": "meta.scope.case-block.shell, meta.scope.case-body.shell",
-            "settings": {
-                "foreground": "#fd971f"
-            }
-        },
-        {
-            "name": "Shell: variable",
-            "scope": "variable.other.normal.shell",
-            "settings": {
-                "foreground": "#6e9cbe"
-            }
-        },
-        {
             "name": "Shell: DOTFILES",
             "scope": "source.shell",
             "settings": {
@@ -1134,9 +1120,54 @@
         },
         {
             "name": "Shell: meta scope in loop",
-            "scope": "meta.scope.for-in-loop.shell, variable.other.loop.shell",
+            "scope": "meta.scope.for-in-loop.shell, meta.scope.while-loop.shell, variable.other.loop.shell",
             "settings": {
-                "foreground": "#e6e1dc"
+                "foreground": "#e6e1dc",
+                "background": "#20202020"
+            }
+        },
+        {
+            "name": "Shell: meta scope in if",
+            "scope": "meta.scope.if-block.shell",
+            "settings": {
+                "foreground": "#e6e1dc",
+                "background": "#20202020"
+            }
+        },
+        {
+            "name": "Shell: meta scope in case",
+            "scope": "meta.scope.case-block.shell",
+            "settings": {
+                "foreground": "#e6e1dc",
+                "background": "#20202020"
+            }
+        },
+        {
+            "name": "Shell: Meta Block",
+            "scope": "meta.scope.case-block.shell, meta.scope.case-body.shell",
+            "settings": {
+                "foreground": "#fd971f"
+            }
+        },
+        {
+            "name": "Shell: Comment",
+            "scope": "comment.line.number-sign.shell",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#7c7865"
+            }
+        },        {
+            "name": "Shell: variable",
+            "scope": "variable.other.normal.shell",
+            "settings": {
+                "foreground": "#6e9cbe"
+            }
+        },
+        {
+            "name": "Shell: builtin",
+            "scope": "support.function.builtin.shell",
+            "settings": {
+                "foreground": "#6e9cbe"
             }
         },
         {
@@ -1144,13 +1175,6 @@
             "scope": "entity.name.function.shell",
             "settings": {
                 "foreground": "#86c20e"
-            }
-        },
-        {
-            "name": "Shell: builtin",
-            "scope": "support.function.builtin.shell",
-            "settings": {
-                "foreground": "#cc7833"
             }
         },
         {
@@ -1165,14 +1189,6 @@
             "scope": "punctuation.definition.logical-expression.shell",
             "settings": {
                 "foreground": "#e6e1dc"
-            }
-        },
-        {
-            "name": "Shell: Comment",
-            "scope": "comment.line.number-sign.shell",
-            "settings": {
-                "fontStyle": "italic",
-                "foreground": "#7c7865"
             }
         },
 

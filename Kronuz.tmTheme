@@ -1463,7 +1463,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#222</string>
+				<string>#20202060</string>
 				<key>foreground</key>
 				<string>#e6e1dc</string>
 			</dict>
@@ -1476,7 +1476,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#222222</string>
+				<string>#20202060</string>
 				<key>foreground</key>
 				<string>#636050</string>
 			</dict>
@@ -1522,6 +1522,56 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Shell: DOTFILES</string>
+			<key>scope</key>
+			<string>source.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e6e1dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shell: meta scope in loop</string>
+			<key>scope</key>
+			<string>meta.scope.for-in-loop.shell, meta.scope.while-loop.shell, variable.other.loop.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#20202020</string>
+				<key>foreground</key>
+				<string>#e6e1dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shell: meta scope in if</string>
+			<key>scope</key>
+			<string>meta.scope.if-block.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#20202020</string>
+				<key>foreground</key>
+				<string>#e6e1dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shell: meta scope in case</string>
+			<key>scope</key>
+			<string>meta.scope.case-block.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#20202020</string>
+				<key>foreground</key>
+				<string>#e6e1dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Shell: Meta Block</string>
 			<key>scope</key>
 			<string>meta.scope.case-block.shell, meta.scope.case-body.shell</string>
@@ -1529,6 +1579,19 @@
 			<dict>
 				<key>foreground</key>
 				<string>#fd971f</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shell: Comment</string>
+			<key>scope</key>
+			<string>comment.line.number-sign.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#7c7865</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1544,24 +1607,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Shell: DOTFILES</string>
+			<string>Shell: builtin</string>
 			<key>scope</key>
-			<string>source.shell</string>
+			<string>support.function.builtin.shell</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e6e1dc</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Shell: meta scope in loop</string>
-			<key>scope</key>
-			<string>meta.scope.for-in-loop.shell, variable.other.loop.shell</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#e6e1dc</string>
+				<string>#6e9cbe</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1573,17 +1625,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#86c20e</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Shell: builtin</string>
-			<key>scope</key>
-			<string>support.function.builtin.shell</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#cc7833</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1606,19 +1647,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#e6e1dc</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Shell: Comment</string>
-			<key>scope</key>
-			<string>comment.line.number-sign.shell</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#7c7865</string>
 			</dict>
 		</dict>
 		<dict>
