@@ -121,7 +121,7 @@
             "name": "Function (definition)",
             "scope": "entity.name.function, keyword.other.name-of-parameter.objc",
             "settings": {
-                "foreground": "#ffc66d"
+                "foreground": "#ffd68d"
             }
         },
         {
@@ -129,7 +129,7 @@
             "scope": "variable.parameter",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#fd971f"
+                "foreground": "#fde9bbdd"
             }
         },
         {
@@ -145,7 +145,7 @@
             "scope": "entity.other.inherited-class",
             "settings": {
                 "fontStyle": "italic underline",
-                "foreground": "#ffc66d"
+                "foreground": "#ffc66dcc"
             }
         },
 
@@ -233,7 +233,7 @@
             "name": "Diff Header",
             "scope": "meta.diff, meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range",
             "settings": {
-                "foreground": "#95815e"
+                "foreground": "#75715E"
             }
         },
         {
@@ -261,7 +261,7 @@
             "name": "Diff Range",
             "scope": "meta.diff, meta.diff.range",
             "settings": {
-                "foreground": "#3bc0f0"
+                "foreground": "#cc7822"
             }
         },
 
@@ -450,7 +450,7 @@
             "name": "CSS: Tag Punctuation",
             "scope": "punctuation.definition.tag.css",
             "settings": {
-                "foreground": "#f92672"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -638,7 +638,7 @@
             "name": "PHP: Storage Type Function",
             "scope": "storage.type.function.php",
             "settings": {
-                "foreground": "#f92672dd"
+                "foreground": "#cc7833dd"
             }
         },
         {
@@ -715,7 +715,7 @@
             "name": "PHP: Comment",
             "scope": "keyword.other.phpdoc",
             "settings": {
-                "foreground": "#7c7865"
+                "foreground": "#95815e"
             }
         },
         {
@@ -737,14 +737,14 @@
             "name": "Python: storage",
             "scope": "storage.type.class.python, storage.type.function.python, storage.modifier.global.python",
             "settings": {
-                "foreground": "#3bc0f0"
+                "foreground": "#cc7822"
             }
         },
         {
             "name": "Python: import",
             "scope": "keyword.control.import.python, keyword.control.import.from.python",
             "settings": {
-                "foreground": "#f92672dd"
+                "foreground": "#cc7833dd"
             }
         },
         {
@@ -901,7 +901,7 @@
             "name": "Ruby: Punctuation Section",
             "scope": "punctuation.section.embedded.ruby, punctuation.definition.string.begin.ruby, punctuation.definition.string.end.ruby",
             "settings": {
-                "foreground": "#f92672"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -1007,7 +1007,7 @@
             "scope": "markup.bold",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#f92672"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -1146,7 +1146,7 @@
             "name": "Shell: Meta Block",
             "scope": "meta.scope.case-block.shell, meta.scope.case-body.shell",
             "settings": {
-                "foreground": "#fd971f"
+                "foreground": "#fde9bbdd"
             }
         },
         {
@@ -1154,7 +1154,7 @@
             "scope": "comment.line.number-sign.shell",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#7c7865"
+                "foreground": "#95815e"
             }
         },        {
             "name": "Shell: variable",
@@ -1202,21 +1202,21 @@
             "name": "Makefile: Comment",
             "scope": "comment.line.number-sign.makefile",
             "settings": {
-                "foreground": "#7c7865"
+                "foreground": "#95815e"
             }
         },
         {
             "name": "Makefile: Comment punctuation",
             "scope": "punctuation.definition.comment.makefile",
             "settings": {
-                "foreground": "#7c7865"
+                "foreground": "#95815e"
             }
         },
         {
             "name": "Makefile: Variables",
             "scope": "variable.other.makefile",
             "settings": {
-                "foreground": "#f92672"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -1244,7 +1244,7 @@
             "name": "GitGutter deleted",
             "scope": "markup.deleted.git_gutter",
             "settings": {
-                "foreground": "#F92672"
+                "foreground": "#cc7833"
             }
         },
         {
