@@ -1044,7 +1044,7 @@
 
     {
         "class": "panel_button_control",
-        "layer0.texture": "Theme - Default/common/dark/panels_button.png",
+        "layer0.texture": "Theme - Kronuz/assets/panels_button.png",
         "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [12, 11]
     },
