@@ -48,6 +48,13 @@
         },
         {
             "name": "String",
+            "scope": "string.unquoted",
+            "settings": {
+                "foreground": "#e6e1dc"
+            }
+        },
+        {
+            "name": "String",
             "scope": "string.quoted.double",
             "settings": {
                 "foreground": "#c1be91"
@@ -90,7 +97,7 @@
         },
         {
             "name": "Variable",
-            "scope": "variable.language, variable.other",
+            "scope": "variable.language",
             "settings": {
                 "foreground": "#d0d0ff"
             }
@@ -114,7 +121,7 @@
             "scope": "storage.type",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#6e9cbe"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -161,6 +168,14 @@
             "scope": "support.function",
             "settings": {
                 "foreground": "#da4939"
+            }
+        },
+        {
+            "name": "Annotation",
+            "scope": "meta.annotation, meta.annotation support.function, tag.decorator entity.name.tag, tag.decorator punctuation.definition.tag",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#6e9cbe"
             }
         },
         {
@@ -408,21 +423,22 @@
             "name": "CSS: @at-rule",
             "scope": "meta.preprocessor.at-rule keyword.control.at-rule",
             "settings": {
-                "foreground": "#f6aa11"
+                "fontStyle": "italic",
+                "foreground": "#6e9cbe"
             }
         },
         {
             "name": "CSS: #Id",
             "scope": "meta.selector.css entity.other.attribute-name.id",
             "settings": {
-                "foreground": "#f6aa11"
+                "foreground": "#e8bf6a"
             }
         },
         {
             "name": "CSS: .class",
             "scope": "meta.selector.css entity.other.attribute-name.class",
             "settings": {
-                "foreground": "#86c20e"
+                "foreground": "#e8bf6a"
             }
         },
         {
@@ -462,7 +478,7 @@
         },
         {
             "name": "CSS :pseudo",
-            "scope": "entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-selector.css",
+            "scope": "entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-selector.css, entity.other.pseudo-element.css, entity.other.pseudo-class.css, entity.other.pseudo-selector.css",
             "settings": {
                 "foreground": "#86c20e"
             }
@@ -508,7 +524,7 @@
             "name": "JS: Function Name",
             "scope": "meta.function.js, entity.name.function.js, support.function.dom.js",
             "settings": {
-                "foreground": "#86c20e"
+                "foreground": "#ffd68d"
             }
         },
         {
@@ -516,7 +532,7 @@
             "scope": "storage.type.js",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#6e9cbe"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -531,7 +547,7 @@
             "scope": "storage.type.function.js",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#6e9cbe"
+                "foreground": "#cc7833"
             }
         },
         {
@@ -543,10 +559,17 @@
         },
         {
             "name": "JS: Literal language variable",
-            "scope": "variable.language.arguments.js, variable.language.super.js, variable.language.this.js, variable.language.self.js, variable.language.proto.js, variable.language.constructor.js, variable.language.prototype.js",
+            "scope": "variable.language.arguments.js, variable.language.super.js, variable.language.proto.js, variable.language.constructor.js, variable.language.prototype.js",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "JS: Literal language variable (this and self)",
+            "scope": "variable.language.this.js, variable.language.self.js",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#6e9cbe"
+                "foreground": "#d0d0ff"
             }
         },
         {
@@ -701,7 +724,7 @@
             "name": "PHP: Function Construct",
             "scope": "support.function.construct.php",
             "settings": {
-                "foreground": "#86c20e"
+                "foreground": "#ffd68d"
             }
         },
         {
@@ -823,7 +846,7 @@
             "name": "Ruby: Function Name",
             "scope": "meta.function.method.with-arguments.ruby",
             "settings": {
-                "foreground": "#86c20e"
+                "foreground": "#ffd68d"
             }
         },
         {
@@ -845,14 +868,14 @@
             "scope": "keyword.control.ruby, keyword.control.def.ruby",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#86c20e"
+                "foreground": "#ffd68d"
             }
         },
         {
             "name": "Ruby: Class",
             "scope": "keyword.control.class.ruby, meta.class.ruby",
             "settings": {
-                "foreground": "#86c20e"
+                "foreground": "#ffd68d"
             }
         },
         {

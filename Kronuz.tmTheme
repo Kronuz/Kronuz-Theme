@@ -88,6 +88,17 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
+			<string>string.unquoted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e6e1dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
 			<string>string.quoted.double</string>
 			<key>settings</key>
 			<dict>
@@ -154,7 +165,7 @@
 			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
-			<string>variable.language, variable.other</string>
+			<string>variable.language</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -193,7 +204,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#6e9cbe</string>
+				<string>#cc7833</string>
 			</dict>
 		</dict>
 		<dict>
@@ -266,6 +277,19 @@
 			<dict>
 				<key>foreground</key>
 				<string>#da4939</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Annotation</string>
+			<key>scope</key>
+			<string>meta.annotation, meta.annotation support.function, tag.decorator entity.name.tag, tag.decorator punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#6e9cbe</string>
 			</dict>
 		</dict>
 		<dict>
@@ -600,8 +624,10 @@
 			<string>meta.preprocessor.at-rule keyword.control.at-rule</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#f6aa11</string>
+				<string>#6e9cbe</string>
 			</dict>
 		</dict>
 		<dict>
@@ -612,7 +638,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f6aa11</string>
+				<string>#e8bf6a</string>
 			</dict>
 		</dict>
 		<dict>
@@ -623,7 +649,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#e8bf6a</string>
 			</dict>
 		</dict>
 		<dict>
@@ -685,7 +711,7 @@
 			<key>name</key>
 			<string>CSS :pseudo</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-selector.css</string>
+			<string>entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-selector.css, entity.other.pseudo-element.css, entity.other.pseudo-class.css, entity.other.pseudo-selector.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -735,7 +761,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#ffd68d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -748,7 +774,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#6e9cbe</string>
+				<string>#cc7833</string>
 			</dict>
 		</dict>
 		<dict>
@@ -772,7 +798,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#6e9cbe</string>
+				<string>#cc7833</string>
 			</dict>
 		</dict>
 		<dict>
@@ -790,13 +816,24 @@
 			<key>name</key>
 			<string>JS: Literal language variable</string>
 			<key>scope</key>
-			<string>variable.language.arguments.js, variable.language.super.js, variable.language.this.js, variable.language.self.js, variable.language.proto.js, variable.language.constructor.js, variable.language.prototype.js</string>
+			<string>variable.language.arguments.js, variable.language.super.js, variable.language.proto.js, variable.language.constructor.js, variable.language.prototype.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS: Literal language variable (this and self)</string>
+			<key>scope</key>
+			<string>variable.language.this.js, variable.language.self.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#6e9cbe</string>
+				<string>#d0d0ff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1005,7 +1042,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#ffd68d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1161,7 +1198,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#ffd68d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1196,7 +1233,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#ffd68d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1207,7 +1244,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86c20e</string>
+				<string>#ffd68d</string>
 			</dict>
 		</dict>
 		<dict>
