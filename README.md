@@ -60,6 +60,12 @@ Then add the following code settings, depending on the theme you choose. **(Afte
 }
 ```
 
+Other settings you can use:
+
+`kronuz_theme_hide_fileicons` - If true, prevents the theme from showing file icons in the sidebar.
+`kronuz_theme_no_folder_animation` - If true, prevents the theme from using folder icon animation in the sidebar.
+`kronuz_theme_no_tree_indicator` - If true, prevents the theme from showing the currently selected item in the sidebar.
+
 ## Retina Resolution UI
 
 Kronuz Theme supports retina display.
