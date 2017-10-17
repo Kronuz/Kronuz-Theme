@@ -36,6 +36,7 @@
             "name": "Comment",
             "scope": "comment",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#95815e"
             }
         },
@@ -353,6 +354,7 @@
             "name": "HTML: Comment Block",
             "scope": "comment.block.html",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#95815e"
             }
         },
@@ -738,6 +740,7 @@
             "name": "PHP: Comment",
             "scope": "keyword.other.phpdoc",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#95815e"
             }
         },
@@ -1225,6 +1228,7 @@
             "name": "Makefile: Comment",
             "scope": "comment.line.number-sign.makefile",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#95815e"
             }
         },
@@ -1232,6 +1236,7 @@
             "name": "Makefile: Comment punctuation",
             "scope": "punctuation.definition.comment.makefile",
             "settings": {
+                "fontStyle": "italic",
                 "foreground": "#95815e"
             }
         },

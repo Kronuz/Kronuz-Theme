@@ -69,6 +69,8 @@
 			<string>comment</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#95815e</string>
 			</dict>
@@ -536,6 +538,8 @@
 			<string>comment.block.html</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#95815e</string>
 			</dict>
@@ -1063,6 +1067,8 @@
 			<string>keyword.other.phpdoc</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#95815e</string>
 			</dict>
@@ -1693,6 +1699,8 @@
 			<string>comment.line.number-sign.makefile</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#95815e</string>
 			</dict>
@@ -1704,6 +1712,8 @@
 			<string>punctuation.definition.comment.makefile</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#95815e</string>
 			</dict>
