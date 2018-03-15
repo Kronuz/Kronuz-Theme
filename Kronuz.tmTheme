@@ -281,6 +281,17 @@
 				<string>#da4939</string>
 			</dict>
 		</dict>
+        <dict>
+            <key>name</key>
+            <string>User function</string>
+            <key>scope</key>
+            <string>variable.function</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ffd68d</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>name</key>
 			<string>Annotation</string>
