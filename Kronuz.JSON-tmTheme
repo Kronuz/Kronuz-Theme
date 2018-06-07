@@ -618,6 +618,168 @@
 			"settings": {
 				"background": "#00000022"
 			}
+		},
+
+		//   ____      _            _     _
+		//  / ___|___ | | ___  _ __(_)___| |__
+		// | |   / _ \| |/ _ \| '__| / __| '_ \
+		// | |__| (_) | | (_) | |  | \__ \ | | |
+		//  \____\___/|_|\___/|_|  |_|___/_| |_|
+		//   Is used to determine the color. E.g. region.<colorish>, with one of
+    	//   redish, orangish, yellowish, greenish, bluish, purplish, pinkish.
+    	{
+    		"name": "Redish",
+    		"scope": "region.redish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ea4646"
+			}
+    	},
+    	{
+    		"name": "Orangish",
+    		"scope": "region.orangish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ea9e46"
+			}
+    	},
+    	{
+    		"name": "Yellowish",
+    		"scope": "region.yellowish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#eaea46"
+			}
+    	},
+    	{
+    		"name": "greenish",
+    		"scope": "region.greenish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#46ea9e"
+			}
+    	},
+    	{
+    		"name": "bluish",
+    		"scope": "region.bluish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#469eea"
+			}
+    	},
+    	{
+    		"name": "purplish",
+    		"scope": "region.purplish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#9e469e"
+			}
+    	},
+    	{
+    		"name": "Pinkish",
+    		"scope": "region.pinkish",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ea9e9e"
+			}
+    	},
+
+		//  ____  _  __  __
+		// |  _ \(_)/ _|/ _|
+		// | | | | | |_| |_
+		// | |_| | |  _|  _|
+		// |____/|_|_| |_|
+		////////////////////////////////////////////////////////////////
+		{
+			"name": "Diff Header",
+			"scope": "meta.diff, meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range",
+			"settings": {
+				"foreground": "#75715E"
+			}
+		},
+		{
+			"name": "Diff Remove",
+			"scope": "markup.deleted",
+			"settings": {
+				"foreground": "#f92640"
+			}
+		},
+		{
+			"name": "Diff Add",
+			"scope": "markup.inserted",
+			"settings": {
+				"foreground": "#86c20e"
+			}
+		},
+		{
+			"name": "Diff Change",
+			"scope": "markup.changed",
+			"settings": {
+				"foreground": "#e6db74"
+			}
+		},
+		{
+			"name": "Diff Range",
+			"scope": "meta.diff, meta.diff.range",
+			"settings": {
+				"foreground": "#cc7822"
+			}
+		},
+
+		//  _____ ___  ____   ___
+		// |_   _/ _ \|  _ \ / _ \
+		//   | || | | | | | | | | |
+		//   | || |_| | |_| | |_| |
+		//   |_| \___/|____/ \___/
+		////////////////////////////////////////////////////////////////
+		{
+			"name": "TODO: Category Name",
+			"scope": "todo.category.name",
+			"settings": {
+				"foreground": "#e8bf6a"
+			}
+		},
+		{
+			"name": "TODO: Urgent",
+			"scope": "todo.task.urgent",
+			"settings": {
+				"foreground": "#feff00"
+			}
+		},
+		{
+			"name": "TODO: Category Extras",
+			"scope": "todo.category.extras",
+			"settings": {
+				"foreground": "#bc9458"
+			}
+		},
+		{
+			"name": "TODO: Task Dormant",
+			"scope": "todo.task.dormant",
+			"settings": {
+				"foreground": "#807c79"
+			}
+		},
+		{
+			"name": "TODO: Task Complete",
+			"scope": "todo.task.complete",
+			"settings": {
+				"foreground": "#da4939"
+			}
+		},
+		{
+			"name": "TODO: Task Question",
+			"scope": "todo.task.question",
+			"settings": {
+				"foreground": "#82a7e2"
+			}
+		},
+		{
+			"name": "TODO: Task Large",
+			"scope": "todo.task.large",
+			"settings": {
+				"foreground": "#a5c261"
+			}
 		}
 	],
 	"uuid": "7126a769-fb8c-4004-9141-bd2f620fd3f4"
