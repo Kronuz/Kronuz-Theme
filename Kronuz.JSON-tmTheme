@@ -54,13 +54,6 @@
 		"terminal.background": "#101010",
 		"titleBar.activeBackground": "#505050"
 	},
-	"gutterSettings": {
-		"selectionForeground": "#86c20e",
-		"selectionBackground": "#586e75",
-		"background": "#073642",
-		"foreground": "#839496",
-		"divider": "#586e75"
-	},
 	"settings": [
 		{
 			"settings": {
