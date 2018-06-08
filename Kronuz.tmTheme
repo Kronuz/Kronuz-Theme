@@ -131,7 +131,7 @@
 				<key>findHighlightForeground</key>
 				<string>#cccccc</string>
 				<key>foreground</key>
-				<string>#c8c6c5</string>
+				<string>#88888877</string>
 				<key>gutter</key>
 				<string>#383838</string>
 				<key>gutterForeground</key>
@@ -148,6 +148,17 @@
 				<string>#df940044</string>
 				<key>tagsOptions</key>
 				<string>stippled_underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Text and Source Base Colors</string>
+			<key>scope</key>
+			<string>text, source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c8c6c5</string>
 			</dict>
 		</dict>
 		<dict>

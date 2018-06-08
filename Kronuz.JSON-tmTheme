@@ -60,7 +60,6 @@
 				"gutter": "#383838",
 				"gutterForeground": "#5a5a5a",
 				"activeGuide": "#df940088",
-				"background": "#383838",
 				"bracketContentsForeground": "#f8f8f2a5",
 				"bracketContentsOptions": "underline",
 				"bracketsForeground": "#ff9400",
@@ -68,13 +67,21 @@
 				"caret": "#c07020",
 				"findHighlight": "#000000",
 				"findHighlightForeground": "#cccccc",
-				"foreground": "#c8c6c5",
 				"invisibles": "#404040",
 				"lineHighlight": "#60606080",
 				"selection": "#3366ff66",
 				"selectionBorder": "#1c1c1c",
 				"stackGuide": "#df940044",
-				"tagsOptions": "stippled_underline"
+				"tagsOptions": "stippled_underline",
+				"foreground": "#88888877",
+				"background": "#383838"
+			}
+		},
+		{
+			"name": "Text and Source Base Colors",
+			"scope": "text, source",
+			"settings": {
+				"foreground": "#c8c6c5"
 			}
 		},
 		{
