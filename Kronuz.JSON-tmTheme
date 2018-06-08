@@ -614,9 +614,9 @@
 		},
 		{
 			"name": "Embedded",
-			"scope": "markup.fenced_code.block.markdown, meta.embedded, source.groovy.embedded",
+			"scope": "markup.raw.block.fenced.markdown, punctuation.definition.fenced.markdown, variable.language.fenced.markdown, markup.fenced_code.block.markdown, meta.embedded, source.groovy.embedded",
 			"settings": {
-				"background": "#00000022"
+				"background": "#20202060"
 			}
 		},
 

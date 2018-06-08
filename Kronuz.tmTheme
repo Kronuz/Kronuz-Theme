@@ -1011,11 +1011,11 @@
 			<key>name</key>
 			<string>Embedded</string>
 			<key>scope</key>
-			<string>markup.fenced_code.block.markdown, meta.embedded, source.groovy.embedded</string>
+			<string>markup.raw.block.fenced.markdown, punctuation.definition.fenced.markdown, variable.language.fenced.markdown, markup.fenced_code.block.markdown, meta.embedded, source.groovy.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#00000022</string>
+				<string>#20202060</string>
 			</dict>
 		</dict>
 		<dict>
