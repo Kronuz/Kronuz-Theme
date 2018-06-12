@@ -1025,8 +1025,8 @@
 			<string>region.redish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#ea4646</string>
 				<key>foreground</key>
 				<string>#ea4646</string>
 			</dict>
@@ -1038,8 +1038,8 @@
 			<string>region.orangish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#ea9e46</string>
 				<key>foreground</key>
 				<string>#ea9e46</string>
 			</dict>
@@ -1051,8 +1051,8 @@
 			<string>region.yellowish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#eaea46</string>
 				<key>foreground</key>
 				<string>#eaea46</string>
 			</dict>
@@ -1064,8 +1064,8 @@
 			<string>region.greenish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#46ea9e</string>
 				<key>foreground</key>
 				<string>#46ea9e</string>
 			</dict>
@@ -1077,8 +1077,8 @@
 			<string>region.bluish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#469eea</string>
 				<key>foreground</key>
 				<string>#469eea</string>
 			</dict>
@@ -1090,8 +1090,8 @@
 			<string>region.purplish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#9e469e</string>
 				<key>foreground</key>
 				<string>#9e469e</string>
 			</dict>
@@ -1103,10 +1103,62 @@
 			<string>region.pinkish</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
+				<key>background</key>
+				<string>#ea9e9e</string>
 				<key>foreground</key>
 				<string>#ea9e9e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Error</string>
+			<key>scope</key>
+			<string>markup.error</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ea4646</string>
+				<key>foreground</key>
+				<string>#ea4646</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Warning</string>
+			<key>scope</key>
+			<string>markup.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ea9e46</string>
+				<key>foreground</key>
+				<string>#ea9e46</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Info</string>
+			<key>scope</key>
+			<string>markup.info</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#46ea9e</string>
+				<key>foreground</key>
+				<string>#46ea9e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Info Suggestion</string>
+			<key>scope</key>
+			<string>markup.info.suggestion</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#469eea</string>
+				<key>foreground</key>
+				<string>#469eea</string>
 			</dict>
 		</dict>
 		<dict>

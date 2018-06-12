@@ -631,58 +631,97 @@
     		"name": "Redish",
     		"scope": "region.redish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#ea4646"
+				"foreground": "#ea4646",
+				"background": "#ea4646"
 			}
     	},
     	{
     		"name": "Orangish",
     		"scope": "region.orangish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#ea9e46"
+				"foreground": "#ea9e46",
+				"background": "#ea9e46"
 			}
     	},
     	{
     		"name": "Yellowish",
     		"scope": "region.yellowish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#eaea46"
+				"foreground": "#eaea46",
+				"background": "#eaea46"
 			}
     	},
     	{
     		"name": "greenish",
     		"scope": "region.greenish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#46ea9e"
+				"foreground": "#46ea9e",
+				"background": "#46ea9e"
 			}
     	},
     	{
     		"name": "bluish",
     		"scope": "region.bluish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#469eea"
+				"foreground": "#469eea",
+				"background": "#469eea"
 			}
     	},
     	{
     		"name": "purplish",
     		"scope": "region.purplish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#9e469e"
+				"foreground": "#9e469e",
+				"background": "#9e469e"
 			}
     	},
     	{
     		"name": "Pinkish",
     		"scope": "region.pinkish",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#ea9e9e"
+				"foreground": "#ea9e9e",
+				"background": "#ea9e9e"
 			}
     	},
+
+		//  _____
+		// | ____|_ __ _ __ ___  _ __ ___
+		// |  _| | '__| '__/ _ \| '__/ __|
+		// | |___| |  | | | (_) | |  \__ \
+		// |_____|_|  |_|  \___/|_|  |___/
+		////////////////////////////////////////////////////////////////
+    	{
+    		"name": "Error",
+    		"scope": "markup.error",
+    		"settings": {
+				"foreground": "#ea4646",
+				"background": "#ea4646"
+    		}
+    	},
+		{
+			"name": "Warning",
+			"scope": "markup.warning",
+			"settings": {
+				"foreground": "#ea9e46",
+				"background": "#ea9e46"
+			}
+		},
+		{
+			"name": "Info",
+			"scope": "markup.info",
+			"settings": {
+				"foreground": "#46ea9e",
+				"background": "#46ea9e"
+			}
+		},
+		{
+			"name": "Info Suggestion",
+			"scope": "markup.info.suggestion",
+			"settings": {
+				"foreground": "#469eea",
+				"background": "#469eea"
+			}
+		},
 
 		//  ____  _  __  __
 		// |  _ \(_)/ _|/ _|
