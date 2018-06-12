@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: JavaScript (React)
+hidden: true
+file_extensions:
+  - jsx
+scope: source.js.jsx
+contexts:
+  main:
+    - include: scope:source.js

@@ -3,11 +3,11 @@
 <plist version="1.0">
 	<dict>
 	    <key>scope</key>
-	    <string>source.jsx</string>
+	    <string>source.js.jsx</string>
 	    <key>settings</key>
 	    <dict>
 	        <key>icon</key>
-	        <string>file_type_react</string>
+	        <string>file_type_reactjs</string>
 	    </dict>
 	</dict>
 </plist>
