@@ -373,11 +373,11 @@
 			<key>name</key>
 			<string>CSS ID</string>
 			<key>scope</key>
-			<string>source.css entity.other.attribute-name</string>
+			<string>entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.pseudo-class.css</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#caa473</string>
 			</dict>

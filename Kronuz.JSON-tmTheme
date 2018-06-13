@@ -214,9 +214,9 @@
 		},
 		{
 			"name": "CSS ID",
-			"scope": "source.css entity.other.attribute-name",
+			"scope": "entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.pseudo-class.css",
 			"settings": {
-				"fontStyle": "",
+				"fontStyle": "italic",
 				"foreground": "#caa473"
 			}
 		},
