@@ -626,63 +626,63 @@
 		// | |__| (_) | | (_) | |  | \__ \ | | |
 		//  \____\___/|_|\___/|_|  |_|___/_| |_|
 		//   Is used to determine the color. E.g. region.<colorish>, with one of
-    	//   redish, orangish, yellowish, greenish, bluish, purplish, pinkish.
-    	{
-    		"name": "Redish",
-    		"scope": "region.redish",
+		//   redish, orangish, yellowish, greenish, bluish, purplish, pinkish.
+		{
+			"name": "Redish",
+			"scope": "region.redish",
 			"settings": {
 				"foreground": "#ea4646",
 				"background": "#ea4646"
 			}
-    	},
-    	{
-    		"name": "Orangish",
-    		"scope": "region.orangish",
+		},
+		{
+			"name": "Orangish",
+			"scope": "region.orangish",
+			"settings": {
+				"foreground": "#ea7d46",
+				"background": "#ea7d46"
+			}
+		},
+		{
+			"name": "Yellowish",
+			"scope": "region.yellowish",
 			"settings": {
 				"foreground": "#ea9e46",
 				"background": "#ea9e46"
 			}
-    	},
-    	{
-    		"name": "Yellowish",
-    		"scope": "region.yellowish",
-			"settings": {
-				"foreground": "#eaea46",
-				"background": "#eaea46"
-			}
-    	},
-    	{
-    		"name": "greenish",
-    		"scope": "region.greenish",
+		},
+		{
+			"name": "greenish",
+			"scope": "region.greenish",
 			"settings": {
 				"foreground": "#46ea9e",
 				"background": "#46ea9e"
 			}
-    	},
-    	{
-    		"name": "bluish",
-    		"scope": "region.bluish",
+		},
+		{
+			"name": "bluish",
+			"scope": "region.bluish",
 			"settings": {
 				"foreground": "#469eea",
 				"background": "#469eea"
 			}
-    	},
-    	{
-    		"name": "purplish",
-    		"scope": "region.purplish",
+		},
+		{
+			"name": "purplish",
+			"scope": "region.purplish",
 			"settings": {
 				"foreground": "#9e469e",
 				"background": "#9e469e"
 			}
-    	},
-    	{
-    		"name": "Pinkish",
-    		"scope": "region.pinkish",
+		},
+		{
+			"name": "Pinkish",
+			"scope": "region.pinkish",
 			"settings": {
 				"foreground": "#ea9e9e",
 				"background": "#ea9e9e"
 			}
-    	},
+		},
 
 		//  _____
 		// | ____|_ __ _ __ ___  _ __ ___
@@ -690,14 +690,14 @@
 		// | |___| |  | | | (_) | |  \__ \
 		// |_____|_|  |_|  \___/|_|  |___/
 		////////////////////////////////////////////////////////////////
-    	{
-    		"name": "Error",
-    		"scope": "markup.error",
-    		"settings": {
+		{
+			"name": "Error",
+			"scope": "markup.error",
+			"settings": {
 				"foreground": "#ea4646",
 				"background": "#ea4646"
-    		}
-    	},
+			}
+		},
 		{
 			"name": "Warning",
 			"scope": "markup.warning",
