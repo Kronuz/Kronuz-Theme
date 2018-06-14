@@ -2,37 +2,31 @@
 	"name": "Kronuz",
 	"author": "Germán Méndez Bravo (Kronuz)",
 	"variables": {
-		"white": "hsl(0, 0%, 100%)",
-		"black": "hsl(0, 0%, 0%)",
-		"blue": "hsl(210, 50%, 60%)",
-		"green": "hsl(114, 31%, 68%)",
-		"grey": "hsl(0, 0%, 20%)",
-		"orange": "hsl(32, 93%, 66%)",
-		"pink": "hsl(300, 30%, 68%)",
-		"red": "hsl(357, 79%, 65%)",
+		"background": "hsl(0, 0%, 20%)",
+		"foreground": "hsl(20, 3%, 80%)",
 
-		"whitish": "#ffffff",
-		"blackish": "#000000",
-		"redish": "#ea4646",
-		"orangish": "#ea7d46",
-		"yellowish": "#ea9e46",
-		"greenish": "#46ea9e",
-		"bluish": "#469eea",
-		"purplish": "#9e469e",
-		"pinkish": "#ea9e9e",
+		"whitish": "hsl(0, 0%, 100%)",
+		"blackish": "hsl(0, 0%, 0%)",
+		"redish": "hsl(0, 60%, 60%)",
+		"orangish": "hsl(20, 60%, 60%)",
+		"yellowish": "hsl(32, 60%, 60%)",
+		"greenish": "hsl(154, 60%, 60%)",
+		"bluish": "hsl(210, 60%, 60%)",
+		"purplish": "hsl(267, 60%, 60%)",
+		"pinkish": "hsl(330, 60%, 60%)",
 	},
 	"globals": {
-		"background": "#383838",
-		"foreground": "#c8c6c5",
+		"background": "var(background)",
+		"foreground": "var(foreground)",
 		"caret": "#c07020",
 		"line_highlight": "#60606080",
 
 		"misspelling": "color(var(greenish) alpha(0.4))",
 		"fold_marker": "var(bluish)",
 
-		"popup_css": "html { --whitish: var(whitish); --blackish: var(blackish); --redish: var(redish); --orangish: var(orangish); --yellowish: var(yellowish); --greenish: var(greenish); --bluish: var(bluish); --purplish: var(purplish); --pinkish: var(pinkish); }",
+		"popup_css": "html { background-color: color(var(--background) blend(#fff 50%)); color: var(--foreground); --whitish: var(whitish); --blackish: var(blackish); --redish: var(redish); --orangish: var(orangish); --yellowish: var(yellowish); --greenish: var(greenish); --bluish: var(bluish); --purplish: var(purplish); --pinkish: var(pinkish); }",
 
-		"gutter": "#383838",
+		"gutter": "var(background)",
 		"gutter_foreground": "#5a5a5a",
 
 		"selection": "#3366ff66",
@@ -53,7 +47,7 @@
 		"tags_options": "stippled_underline",
 		"tags_foreground": "var(pinkish)",
 
-		"shadow": "color(var(black) alpha(0.25))",
+		"shadow": "color(var(blackish) alpha(0.25))",
 
 		"invisibles": "#404040",
 	},
@@ -110,7 +104,7 @@
 			"name": "Tag",
 			"scope": "meta.tag",
 			"font_style": "",
-			"foreground": "#c8c6c5"
+			"foreground": "var(foreground)"
 		},
 		{
 			"name": "Doctype",
@@ -190,7 +184,7 @@
 		{
 			"name": "Reset JavaScript string interpolation expression",
 			"scope": "meta.template.expression",
-			"foreground": "#c8c6c5"
+			"foreground": "var(foreground)"
 		},
 		{
 			"name": "PHP Function Call",
