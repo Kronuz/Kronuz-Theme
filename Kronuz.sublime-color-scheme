@@ -409,7 +409,7 @@
 		},
 		{
 			"name": "User-defined constant",
-			"scope": "",
+			"scope": "constant.other",
 			"font_style": "italic",
 			"foreground": "#e8e6e5"
 		},
