@@ -2,6 +2,7 @@
 	"name": "Kronuz",
 	"author": "Germán Méndez Bravo (Kronuz)",
 	"variables": {
+		"white": "hsl(0, 0%, 100%)",
 		"black": "hsl(0, 0%, 0%)",
 		"blue": "hsl(210, 50%, 60%)",
 		"green": "hsl(114, 31%, 68%)",
@@ -9,8 +10,9 @@
 		"orange": "hsl(32, 93%, 66%)",
 		"pink": "hsl(300, 30%, 68%)",
 		"red": "hsl(357, 79%, 65%)",
-		"white": "hsl(0, 0%, 100%)",
 
+		"whitish": "#ffffff",
+		"blackish": "#000000",
 		"redish": "#ea4646",
 		"orangish": "#ea7d46",
 		"yellowish": "#ea9e46",
@@ -20,30 +22,40 @@
 		"pinkish": "#ea9e9e",
 	},
 	"globals": {
+		"background": "#383838",
+		"foreground": "#c8c6c5",
+		"caret": "#c07020",
+		"line_highlight": "#60606080",
+
+		"misspelling": "color(var(greenish) alpha(0.4))",
+		"fold_marker": "var(bluish)",
+
+		"popup_css": "html { --whitish: var(whitish); --blackish: var(blackish); --redish: var(redish); --orangish: var(orangish); --yellowish: var(yellowish); --greenish: var(greenish); --bluish: var(bluish); --purplish: var(purplish); --pinkish: var(pinkish); }",
+
 		"gutter": "#383838",
 		"gutter_foreground": "#5a5a5a",
-		"active_guide": "#df940088",
-		"background": "#383838",
-		"bracket_contents_foreground": "#f8f8f2a5",
-		"bracket_contents_options": "underline",
-		"brackets_foreground": "#ff9400",
-		"brackets_options": "foreground underline",
-		"caret": "#c07020",
-		"find_highlight": "#000000",
-		"find_highlight_foreground": "#cccccc",
-		"foreground": "#c8c6c5",
-		"invisibles": "#404040",
-		"line_highlight": "#60606080",
+
 		"selection": "#3366ff66",
 		"selection_border": "#1c1c1c",
-		"stack_guide": "#df940044",
-		"tags_options": "stippled_underline",
 
-		"tags_foreground": "var(pinkish)",
-		"misspelling": "var(redish)",
-		"shadow": "color(var(black) alpha(0.25))",
-		"inactive_selection": "var(bluish)",
 		"highlight": "var(bluish)",
+		"find_highlight": "#000000",
+		"find_highlight_foreground": "#cccccc",
+
+		"active_guide": "#df940088",
+		"stack_guide": "#df940044",
+
+		"brackets_options": "foreground underline",
+		"brackets_foreground": "#ff9400",
+		"bracket_contents_options": "underline",
+		"bracket_contents_foreground": "#f8f8f2a5",
+
+		"tags_options": "stippled_underline",
+		"tags_foreground": "var(pinkish)",
+
+		"shadow": "color(var(black) alpha(0.25))",
+
+		"invisibles": "#404040",
 	},
 	"rules": [
 		{
