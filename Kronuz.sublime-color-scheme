@@ -24,7 +24,7 @@
 		"misspelling": "color(var(greenish) alpha(0.4))",
 		"fold_marker": "var(bluish)",
 
-		"popup_css": "html { background-color: color(var(--background) blend(#fff 50%)); color: var(--foreground); --whitish: var(whitish); --blackish: var(blackish); --redish: var(redish); --orangish: var(orangish); --yellowish: var(yellowish); --greenish: var(greenish); --bluish: var(bluish); --purplish: var(purplish); --pinkish: var(pinkish); }",
+		"popup_css": "html { --background: hsl(0, 0%, 20%); --foreground: hsl(20, 3%, 80%); --whitish: hsl(0, 0%, 100%); --blackish: hsl(0, 0%, 0%); --redish: hsl(0, 60%, 60%); --orangish: hsl(20, 60%, 60%); --yellowish: hsl(32, 60%, 60%); --greenish: hsl(154, 60%, 60%); --bluish: hsl(210, 60%, 60%); --purplish: hsl(267, 60%, 60%); --pinkish: hsl(330, 60%, 60%); background-color: var(--background); color: var(--foreground); } a { color: var(--bluish); }",
 
 		"gutter": "var(background)",
 		"gutter_foreground": "#5a5a5a",
