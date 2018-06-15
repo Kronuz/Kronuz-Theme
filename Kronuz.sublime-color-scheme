@@ -349,9 +349,9 @@
 		},
 		{
 			"name": "Function Call Object",
-			"scope": "meta.function-call.generic, meta.function-call.object",
+			"scope": "meta.function-call.generic, meta.function-call.object, variable.function",
 			"font_style": "",
-			"foreground": "#e8bf6a"
+			"foreground": "#e6dfcf"
 		},
 		{
 			"name": "Function Call Variable",
@@ -377,7 +377,7 @@
 		},
 		{
 			"name": "Built-in constant",
-			"scope": "constant.character, constant.language, constant.other.character-class",
+			"scope": "constant.character, constant.language, constant.other.character-class, constant.other.placeholder",
 			"foreground": "#6e9cbe"
 		},
 		{
