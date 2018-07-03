@@ -56,7 +56,7 @@ Then add the following code settings, depending on the theme you choose. **(Afte
 ```json
 {
     "theme": "Theme - Kronuz.sublime-theme",
-    "color_scheme": "Packages/Theme - Kronuz/Kronuz.tmTheme"
+    "color_scheme": "Packages/Theme - Kronuz/Kronuz.sublime-color-scheme"
 }
 ```
 

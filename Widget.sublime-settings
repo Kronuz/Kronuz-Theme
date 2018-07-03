@@ -1,6 +1,6 @@
 {
     "syntax": "Packages/Theme - Kronuz/Console.sublime-syntax",
-    "color_scheme": "Packages/Theme - Kronuz/Kronuz.tmTheme",
+    "color_scheme": "Packages/Theme - Kronuz/Kronuz.sublime-color-scheme",
     "draw_shadows": false,
     "line_padding_top": 2
 }
