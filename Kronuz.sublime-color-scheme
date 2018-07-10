@@ -2,7 +2,7 @@
 	"name": "Kronuz",
 	"author": "Germán Méndez Bravo (Kronuz)",
 	"variables": {
-		"background": "hsl(0, 0%, 20%)",
+		"background": "hsl(0, 0%, 22%)",
 		"foreground": "hsl(20, 3%, 80%)",
 
 		"whitish": "hsl(0, 0%, 100%)",
