@@ -393,7 +393,7 @@
 		},
 		{
 			"name": "String Double-quoted",
-			"scope": "string.quoted.double, string.quoted.multi",
+			"scope": "string.quoted.double, string.quoted.multi, string.unquoted.block",
 			"foreground": "#c1be91"
 		},
 		{
@@ -422,6 +422,11 @@
 			"name": "Embedded",
 			"scope": "markup.raw.block.fenced.markdown, punctuation.definition.fenced.markdown, variable.language.fenced.markdown, markup.fenced_code.block.markdown, meta.embedded, source.groovy.embedded",
 			"background": "#20202060"
+		},
+		{
+			"name": "YAML configurable strings",
+			"scope": "source.yaml string.quoted.double, source.yaml string.unquoted.block",
+			"background": "#20202040"
 		},
 
 		//   ____      _            _     _
