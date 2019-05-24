@@ -424,6 +424,16 @@
 			"background": "#20202060"
 		},
 		{
+			"name": "Commented",
+			"scope": "commented",
+			"background": "#446a8020"
+		},
+		{
+			"name": "Commented + Embedded",
+			"scope": "commented markup.raw.block.fenced.markdown, commented punctuation.definition.fenced.markdown, commented variable.language.fenced.markdown, commented markup.fenced_code.block.markdown, commented meta.embedded, commented source.groovy.embedded",
+			"background": "#1b2a3350"
+		},
+		{
 			"name": "YAML configurable strings",
 			"scope": "source.yaml string.quoted.double, source.yaml string.unquoted.block",
 			"background": "#20202040"
