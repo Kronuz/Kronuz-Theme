@@ -22,7 +22,7 @@ function scheme(variant) {
   const S = dark ? 58 : 62;
   const L = dark ? 64 : 42;
   const vars = {
-    background: dark ? "hsl(28, 9%, 18%)" : "hsl(36, 30%, 97%)",
+    background: dark ? "hsl(0, 0%, 22%)" : "hsl(36, 30%, 97%)",
     foreground: dark ? "hsl(20, 3%, 80%)" : "hsl(20, 12%, 24%)",
     dim: dark ? "hsl(20, 4%, 52%)" : "hsl(20, 8%, 52%)",
     soft: dark ? "hsl(20, 4%, 62%)" : "hsl(22, 8%, 42%)",
