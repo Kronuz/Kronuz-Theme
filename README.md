@@ -17,6 +17,20 @@ Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color sc
 *The font used in the screenshots is Menlo 12 with no antialias.
 
 
+### Color schemes
+
+The package ships two syntax color schemes, both generated from one HSL palette
+(red/orange/yellow/green/blue/purple/pink) and one scope → color map by
+`build-color-scheme.mjs`:
+
+- **Kronuz** — the dark scheme (background `hsl(28, 9%, 18%)`).
+- **Kronuz Light** — a light variant in the same spirit (warm off-white
+  background, the same hues deepened for contrast).
+
+Pick one under *Preferences → Color Scheme*. To tweak the palette or the
+mapping, edit `build-color-scheme.mjs` and run `node build-color-scheme.mjs`.
+
+
 ## Installation
 
 ### Package Control
