@@ -66,7 +66,7 @@
 		},
 		{
 			"scope": "support",
-			"foreground": "#b4181f"
+			"foreground": "var(type)"
 		},
 		{
 			"scope": "variable.parameter",
@@ -83,7 +83,7 @@
 		},
 		{
 			"scope": "punctuation.section.embedded -(source string source punctuation.section.embedded), meta.brace.erb.html",
-			"foreground": "#079d07"
+			"foreground": "var(string)"
 		},
 		{
 			"scope": "invalid",
@@ -139,7 +139,7 @@
 		},
 		{
 			"scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
-			"foreground": "#b4181f"
+			"foreground": "var(type)"
 		},
 		{
 			"scope": "variable.language.js",
@@ -155,7 +155,7 @@
 		},
 		{
 			"scope": "meta.function-call.object.php",
-			"foreground": "#bb9811"
+			"foreground": "var(func)"
 		},
 		{
 			"scope": "punctuation.definition.string.end.php, punctuation.definition.string.begin.php",
@@ -163,7 +163,7 @@
 		},
 		{
 			"scope": "source.php.embedded.line.html",
-			"foreground": "#979897"
+			"foreground": "var(dim)"
 		},
 		{
 			"scope": "punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php",
@@ -179,7 +179,7 @@
 		},
 		{
 			"scope": "keyword.other.special-method.ruby",
-			"foreground": "#c4a608"
+			"foreground": "var(keyword)"
 		},
 		{
 			"scope": "punctuation.section.embedded.begin.ruby, punctuation.section.embedded.end.ruby",
@@ -187,11 +187,11 @@
 		},
 		{
 			"scope": "keyword.other.DML.sql",
-			"foreground": "#bb9811"
+			"foreground": "var(func)"
 		},
 		{
 			"scope": "meta.diff, meta.diff.header",
-			"foreground": "#326a24",
+			"foreground": "var(soft)",
 			"font_style": "italic"
 		},
 		{
@@ -238,7 +238,7 @@
 		},
 		{
 			"scope": "markup.underline",
-			"foreground": "#6b9d07"
+			"foreground": "var(list)"
 		},
 		{
 			"scope": "string.other.link.title.markdown",
@@ -246,19 +246,19 @@
 		},
 		{
 			"scope": "token.info-token",
-			"foreground": "#0743aa"
+			"foreground": "var(link)"
 		},
 		{
 			"scope": "token.warn-token",
-			"foreground": "#bd810f"
+			"foreground": "var(keyword)"
 		},
 		{
 			"scope": "token.error-token",
-			"foreground": "#bb0808"
+			"foreground": "var(del)"
 		},
 		{
 			"scope": "token.debug-token",
-			"foreground": "#6707aa"
+			"foreground": "var(raw)"
 		},
 		{
 			"scope": "variable.language",
