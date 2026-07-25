@@ -1,10 +1,12 @@
-# Theme - Kronuz
+# Kronuz Theme for Sublime Text
 
-Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color scheme. The theme is based on [Soda Dark](https://github.com/buymeasoda/soda-theme) and the [Afterglow](https://github.com/YabataDesign/afterglow-theme) theme.
+The Sublime Text edition of the Kronuz theme. Its Sublime UI is based on
+[Soda Dark](https://github.com/buymeasoda/soda-theme) and
+[Afterglow](https://github.com/YabataDesign/afterglow-theme).
 
 ## Design & Colors
 
-[View a larger screenshot](https://raw.githubusercontent.com/Kronuz/Kronuz-Theme/master/Screenshots/Kronuz-Theme.png)
+[View a larger screenshot](https://raw.githubusercontent.com/Kronuz/kronuz-theme-sublime/master/Screenshots/Kronuz-Theme.png)
 
 ![Theme - Kronuz](Screenshots/Kronuz-Theme.png)
 
@@ -19,16 +21,15 @@ Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color sc
 
 ### Color schemes
 
-The package ships two syntax color schemes, both generated from one HSL palette
-(red/orange/yellow/green/blue/purple/pink) and one scope → color map by
-`build-color-scheme.mjs`:
+The package ships two generated syntax color schemes:
 
 - **Kronuz** — the dark scheme (background `hsl(28, 9%, 18%)`).
 - **Kronuz Light** — a light variant in the same spirit (warm off-white
   background, the same hues deepened for contrast).
 
-Pick one under *Preferences → Color Scheme*. To tweak the palette or the
-mapping, edit `build-color-scheme.mjs` and run `node build-color-scheme.mjs`.
+Pick one under *Preferences → Color Scheme*. The canonical source and generator live
+in [`KronuzTheme`](https://github.com/Kronuz/KronuzTheme); this repository contains
+only Sublime-specific packaging, UI assets, and generated Sublime outputs.
 
 
 ## Installation
@@ -48,12 +49,12 @@ Locate your Sublime Text `Packages directory` by using the menu item `Preference
 
 Then, clone the repository using this command:
 
-    git clone https://github.com/Kronuz/Kronuz-Theme/ "Theme - Kronuz"
+    git clone https://github.com/Kronuz/kronuz-theme-sublime/ "Theme - Kronuz"
 
 
 ### Manual installation
 
-* Download the [GitHub .zip](https://github.com/Kronuz/Kronuz-Theme/archive/master.zip)
+* Download the [GitHub .zip](https://github.com/Kronuz/kronuz-theme-sublime/archive/master.zip)
 * Unzip the files and rename the folder to `Theme - Kronuz`
 * Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
 * Copy the folder into your Sublime Text `Packages` directory.
